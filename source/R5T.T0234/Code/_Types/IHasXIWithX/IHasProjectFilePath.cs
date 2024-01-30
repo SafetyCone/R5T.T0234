@@ -1,6 +1,7 @@
 ﻿using System;
 
 using R5T.T0142;
+using R5T.T0240;
 
 
 namespace R5T.T0234
@@ -11,7 +12,7 @@ namespace R5T.T0234
     /// <remarks>
     /// Left unspecified is whether the project file is a .csproj (C#), .vbproj (Visual Basic), .fsproj (F#), or other .NET language MSBuild project file.
     /// </remarks>
-    [DataTypeMarker]
+    [HasXMarker, DataTypeMarker]
     public interface IHasProjectFilePath
     {
         string ProjectFilePath { get; }

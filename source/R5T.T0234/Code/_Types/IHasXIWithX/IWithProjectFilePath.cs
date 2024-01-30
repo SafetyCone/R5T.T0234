@@ -1,6 +1,7 @@
 ﻿using System;
 
 using R5T.T0142;
+using R5T.T0240;
 
 
 namespace R5T.T0234
@@ -9,7 +10,7 @@ namespace R5T.T0234
     /// With a string-typed project file path.
     /// </summary>
     /// <inheritdoc cref="IHasProjectFilePath" path="/remarks"/>
-    [DataTypeMarker]
+    [WithXMarker, DataTypeMarker]
     public interface IWithProjectFilePath :
         IHasProjectFilePath
     {
